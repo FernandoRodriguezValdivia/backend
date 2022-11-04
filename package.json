@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "8.11.3",
-    "npm": "6.4.1"
+    "node": "16.13.1",
+    "npm": "8.1.2"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=production node index.js",
