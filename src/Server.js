@@ -30,6 +30,9 @@ class Server {
   }
 
   routes() {
+    this.app.get('/', (req, res)=>{
+      res.status(201).json({ message: 'Servidor on'});
+    })
     this.app.use('/api/user', userRouter);
     this.app.use('/api/mensaje', mensajeRouter);
     this.app.use((_req, res) => {
